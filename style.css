@@ -144,11 +144,82 @@ button:hover {
     margin-top: 20px;
     padding-left: 0px; 
 }
-
 .cert-img {
     width: 500px;           
     height: auto;
     border: 3px solid #fff; 
     border-radius: 30px;  
     box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+}
+.tech-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.tech-card {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease; 
+    cursor: default;
+}
+.tech-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 20px rgba(52, 152, 219, 0.3);
+    background-color: rgba(52, 152, 219, 0.1); 
+}
+.tech-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+.tech-card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+
+.tech-logo {
+    width: 60px;  
+    height: 60px;
+    object-fit: contain; 
+    margin-bottom: 10px;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px); 
+    border-color: #ffffff;
+    background-color: rgba(52, 152, 219, 0.1);
 }
