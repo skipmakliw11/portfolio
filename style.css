@@ -194,14 +194,46 @@ button:hover {
 
 .cert-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
-    border-radius: 40px;
+    gap: 30px;
+    padding: 20px;
+    align-items: stretch;  
+}
+
+.cert-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #38bdf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; 
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    background: #253347;
 }
 
 .cert-img {
-    max-width: 45%;
-    height: auto;
-    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cert-link {
+    color: #3498db; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+    color: #7dd3fc;
 }
