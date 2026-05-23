@@ -20,6 +20,39 @@ section {
     padding: 15px 40px;
 }
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #367ae9;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+}
+
 
 .logo {
     color: white;
