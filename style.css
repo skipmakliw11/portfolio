@@ -1,70 +1,55 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-body {
-    font-family: Arial, sans-serif;
+/* Reset basic layout properties */
+* {
     margin: 0;
-    background: #0f172a;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
 }
 
-section {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.6;
+/* Dark Purple Background & White Text */
+body {
+    background-color: #160c28; /* Deep rich dark purple */
+    color: #ffffff;             /* Pure white main text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Navigation Bar */
 nav {
-    background: #367ae9;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 0;
+    width: 100%;
 }
 
 nav a {
-    color: white;
-    margin: 0 10px; 
+    color: #ffffff; /* White text on buttons */
     text-decoration: none;
-    font-weight: bold;
+    background-color: #e63946; /* Accent red button styling */
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    background-color: #c92a37;
+    transform: translateY(-2px);
 }
 
-h1 {
+/* Hero Section Container */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 50px;
-}
-
-h2 {
+    max-width: 650px;
     margin-top: 20px;
-    color: #38bdf8;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    box-sizing: border-box; 
-}
-button {
-    background: #38bdf8;
-    border: none;
-    padding: 10px 15px;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background: #7dd3fc;
-}
+    padding: 0 20px
